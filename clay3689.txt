@@ -5,137 +5,151 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"trojan","name":"🇮🇲负载均衡节点—主","server":"a015.zhuan99.men","port":10015,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇮🇲负载均衡节点—备","server":"a016.zhuan99.men","port":10016,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇸🇬新加坡A—专线主","server":"a003.zhuan99.men","port":10003,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇸🇬新加坡A专线备","server":"a009.zhuan99.men","port":10009,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇭🇰香港A—专线主","server":"a001.zhuan99.men","port":10001,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇭🇰香港A专线备","server":"a007.zhuan99.men","port":10007,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇯🇵日本A—专线主","server":"a002.zhuan99.men","port":10002,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇯🇵日本A专线备","server":"a008.zhuan99.men","port":10008,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇺🇸美国A—专线主","server":"a004.zhuan99.men","port":10004,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇺🇸美国A专线备","server":"a010.zhuan99.men","port":10010,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇳🇱荷兰A—专线主","server":"a005.zhuan99.men","port":10005,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇳🇱荷兰A专线备","server":"a011.zhuan99.men","port":10011,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇨🇳台湾A—专线主","server":"a006.zhuan99.men","port":10006,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
-  - {"type":"trojan","name":"🇨🇳台湾A专线备","server":"a012.zhuan99.men","port":10012,"password":"a3b94e96-f384-4816-bebf-cd9633304d8d","udp":true,"skip-cert-verify":true,"sni":"zhu.99ton.men"}
+  - {"type":"ss","name":"NSGS1(AndroidX)","server":"iepl.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.suijiceshi.xyz","port":42839,"cipher":"aes-128-gcm","password":"8bee6ce7-9d59-447d-89bd-59808909b687"}
+  - {"type":"ss","name":"NSGS2(AndroidX)","server":"shct.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.suijiceshi.xyz","port":42839,"cipher":"aes-128-gcm","password":"8bee6ce7-9d59-447d-89bd-59808909b687"}
+  - {"type":"ss","name":"NJPS1(AndroidX)","server":"iepl.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.suijiceshi.xyz","port":21764,"cipher":"aes-128-gcm","password":"8bee6ce7-9d59-447d-89bd-59808909b687"}
+  - {"type":"ss","name":"NJPS2(AndroidX)","server":"shct.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.suijiceshi.xyz","port":21764,"cipher":"aes-128-gcm","password":"8bee6ce7-9d59-447d-89bd-59808909b687"}
+  - {"type":"ss","name":"NINS1(AndroidX)","server":"shct.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.suijiceshi.xyz","port":11665,"cipher":"aes-128-gcm","password":"8bee6ce7-9d59-447d-89bd-59808909b687"}
+  - {"type":"ss","name":"NHKS1(AndroidX)","server":"shct.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.suijiceshi.xyz","port":45312,"cipher":"aes-128-gcm","password":"8bee6ce7-9d59-447d-89bd-59808909b687"}
+  - {"type":"ss","name":"NHKS2(AndroidX)","server":"shct.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.suijiceshi.xyz","port":13360,"cipher":"aes-128-gcm","password":"8bee6ce7-9d59-447d-89bd-59808909b687"}
+  - {"type":"ss","name":"NVNS1(AndroidX)","server":"ct1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.suijiceshi.xyz","port":32693,"cipher":"aes-128-gcm","password":"8bee6ce7-9d59-447d-89bd-59808909b687"}
+  - {"type":"trojan","name":"EJPT2","server":"dl-jp2.efyunpan.com","port":443,"password":"329a7aac-bdda-498f-9ff0-dc843e24d9a4","udp":true,"skip-cert-verify":true,"sni":"data-jp.efyunpan.com"}
+  - {"type":"trojan","name":"EJPT3","server":"dl-jp3.efyunpan.com","port":443,"password":"329a7aac-bdda-498f-9ff0-dc843e24d9a4","udp":true,"skip-cert-verify":true,"sni":"data-jp.efyunpan.com"}
+  - {"type":"trojan","name":"EJPT4","server":"dl-jp4.efyunpan.com","port":443,"password":"329a7aac-bdda-498f-9ff0-dc843e24d9a4","udp":true,"skip-cert-verify":true,"sni":"data-jp.efyunpan.com"}
+  - {"type":"trojan","name":"ETWT2","server":"dl-tw2.efyunpan.com","port":443,"password":"329a7aac-bdda-498f-9ff0-dc843e24d9a4","udp":true,"skip-cert-verify":true,"sni":"data-tw.efyunpan.com"}
+  - {"type":"trojan","name":"ETWT3","server":"dl-tw3.efyunpan.com","port":443,"password":"329a7aac-bdda-498f-9ff0-dc843e24d9a4","udp":true,"skip-cert-verify":true,"sni":"data-tw.efyunpan.com"}
+  - {"type":"trojan","name":"EUST1","server":"dl-us1.efyunpan.com","port":443,"password":"329a7aac-bdda-498f-9ff0-dc843e24d9a4","udp":true,"skip-cert-verify":true,"sni":"data-us.efyunpan.com"}
+  - {"type":"trojan","name":"EUST2","server":"dl-us2.efyunpan.com","port":443,"password":"329a7aac-bdda-498f-9ff0-dc843e24d9a4","udp":true,"skip-cert-verify":true,"sni":"data-us.efyunpan.com"}
+  - {"type":"trojan","name":"EHKT5","server":"dl-hk1.efyunpan.com","port":443,"password":"329a7aac-bdda-498f-9ff0-dc843e24d9a4","udp":true,"skip-cert-verify":true,"sni":"data-hk.efyunpan.com"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇮🇲负载均衡节点—主
-      - 🇮🇲负载均衡节点—备
-      - 🇸🇬新加坡A—专线主
-      - 🇸🇬新加坡A专线备
-      - 🇭🇰香港A—专线主
-      - 🇭🇰香港A专线备
-      - 🇯🇵日本A—专线主
-      - 🇯🇵日本A专线备
-      - 🇺🇸美国A—专线主
-      - 🇺🇸美国A专线备
-      - 🇳🇱荷兰A—专线主
-      - 🇳🇱荷兰A专线备
-      - 🇨🇳台湾A—专线主
-      - 🇨🇳台湾A专线备
+      - NSGS1(AndroidX)
+      - NSGS2(AndroidX)
+      - NJPS1(AndroidX)
+      - NJPS2(AndroidX)
+      - NINS1(AndroidX)
+      - NHKS1(AndroidX)
+      - NHKS2(AndroidX)
+      - NVNS1(AndroidX)
+      - EJPT2
+      - EJPT3
+      - EJPT4
+      - ETWT2
+      - ETWT3
+      - EUST1
+      - EUST2
+      - EHKT5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇲负载均衡节点—主
-      - 🇮🇲负载均衡节点—备
-      - 🇸🇬新加坡A—专线主
-      - 🇸🇬新加坡A专线备
-      - 🇭🇰香港A—专线主
-      - 🇭🇰香港A专线备
-      - 🇯🇵日本A—专线主
-      - 🇯🇵日本A专线备
-      - 🇺🇸美国A—专线主
-      - 🇺🇸美国A专线备
-      - 🇳🇱荷兰A—专线主
-      - 🇳🇱荷兰A专线备
-      - 🇨🇳台湾A—专线主
-      - 🇨🇳台湾A专线备
+      - NSGS1(AndroidX)
+      - NSGS2(AndroidX)
+      - NJPS1(AndroidX)
+      - NJPS2(AndroidX)
+      - NINS1(AndroidX)
+      - NHKS1(AndroidX)
+      - NHKS2(AndroidX)
+      - NVNS1(AndroidX)
+      - EJPT2
+      - EJPT3
+      - EJPT4
+      - ETWT2
+      - ETWT3
+      - EUST1
+      - EUST2
+      - EHKT5
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇮🇲负载均衡节点—主
-      - 🇮🇲负载均衡节点—备
-      - 🇸🇬新加坡A—专线主
-      - 🇸🇬新加坡A专线备
-      - 🇭🇰香港A—专线主
-      - 🇭🇰香港A专线备
-      - 🇯🇵日本A—专线主
-      - 🇯🇵日本A专线备
-      - 🇺🇸美国A—专线主
-      - 🇺🇸美国A专线备
-      - 🇳🇱荷兰A—专线主
-      - 🇳🇱荷兰A专线备
-      - 🇨🇳台湾A—专线主
-      - 🇨🇳台湾A专线备
+      - NSGS1(AndroidX)
+      - NSGS2(AndroidX)
+      - NJPS1(AndroidX)
+      - NJPS2(AndroidX)
+      - NINS1(AndroidX)
+      - NHKS1(AndroidX)
+      - NHKS2(AndroidX)
+      - NVNS1(AndroidX)
+      - EJPT2
+      - EJPT3
+      - EJPT4
+      - ETWT2
+      - ETWT3
+      - EUST1
+      - EUST2
+      - EHKT5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇮🇲负载均衡节点—主
-      - 🇮🇲负载均衡节点—备
-      - 🇸🇬新加坡A—专线主
-      - 🇸🇬新加坡A专线备
-      - 🇭🇰香港A—专线主
-      - 🇭🇰香港A专线备
-      - 🇯🇵日本A—专线主
-      - 🇯🇵日本A专线备
-      - 🇺🇸美国A—专线主
-      - 🇺🇸美国A专线备
-      - 🇳🇱荷兰A—专线主
-      - 🇳🇱荷兰A专线备
-      - 🇨🇳台湾A—专线主
-      - 🇨🇳台湾A专线备
+      - NSGS1(AndroidX)
+      - NSGS2(AndroidX)
+      - NJPS1(AndroidX)
+      - NJPS2(AndroidX)
+      - NINS1(AndroidX)
+      - NHKS1(AndroidX)
+      - NHKS2(AndroidX)
+      - NVNS1(AndroidX)
+      - EJPT2
+      - EJPT3
+      - EJPT4
+      - ETWT2
+      - ETWT3
+      - EUST1
+      - EUST2
+      - EHKT5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇮🇲负载均衡节点—主
-      - 🇮🇲负载均衡节点—备
-      - 🇸🇬新加坡A—专线主
-      - 🇸🇬新加坡A专线备
-      - 🇭🇰香港A—专线主
-      - 🇭🇰香港A专线备
-      - 🇯🇵日本A—专线主
-      - 🇯🇵日本A专线备
-      - 🇺🇸美国A—专线主
-      - 🇺🇸美国A专线备
-      - 🇳🇱荷兰A—专线主
-      - 🇳🇱荷兰A专线备
-      - 🇨🇳台湾A—专线主
-      - 🇨🇳台湾A专线备
+      - NSGS1(AndroidX)
+      - NSGS2(AndroidX)
+      - NJPS1(AndroidX)
+      - NJPS2(AndroidX)
+      - NINS1(AndroidX)
+      - NHKS1(AndroidX)
+      - NHKS2(AndroidX)
+      - NVNS1(AndroidX)
+      - EJPT2
+      - EJPT3
+      - EJPT4
+      - ETWT2
+      - ETWT3
+      - EUST1
+      - EUST2
+      - EHKT5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇮🇲负载均衡节点—主
-      - 🇮🇲负载均衡节点—备
-      - 🇸🇬新加坡A—专线主
-      - 🇸🇬新加坡A专线备
-      - 🇭🇰香港A—专线主
-      - 🇭🇰香港A专线备
-      - 🇯🇵日本A—专线主
-      - 🇯🇵日本A专线备
-      - 🇺🇸美国A—专线主
-      - 🇺🇸美国A专线备
-      - 🇳🇱荷兰A—专线主
-      - 🇳🇱荷兰A专线备
-      - 🇨🇳台湾A—专线主
-      - 🇨🇳台湾A专线备
+      - NSGS1(AndroidX)
+      - NSGS2(AndroidX)
+      - NJPS1(AndroidX)
+      - NJPS2(AndroidX)
+      - NINS1(AndroidX)
+      - NHKS1(AndroidX)
+      - NHKS2(AndroidX)
+      - NVNS1(AndroidX)
+      - EJPT2
+      - EJPT3
+      - EJPT4
+      - ETWT2
+      - ETWT3
+      - EUST1
+      - EUST2
+      - EHKT5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -158,20 +172,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇮🇲负载均衡节点—主
-      - 🇮🇲负载均衡节点—备
-      - 🇸🇬新加坡A—专线主
-      - 🇸🇬新加坡A专线备
-      - 🇭🇰香港A—专线主
-      - 🇭🇰香港A专线备
-      - 🇯🇵日本A—专线主
-      - 🇯🇵日本A专线备
-      - 🇺🇸美国A—专线主
-      - 🇺🇸美国A专线备
-      - 🇳🇱荷兰A—专线主
-      - 🇳🇱荷兰A专线备
-      - 🇨🇳台湾A—专线主
-      - 🇨🇳台湾A专线备
+      - NSGS1(AndroidX)
+      - NSGS2(AndroidX)
+      - NJPS1(AndroidX)
+      - NJPS2(AndroidX)
+      - NINS1(AndroidX)
+      - NHKS1(AndroidX)
+      - NHKS2(AndroidX)
+      - NVNS1(AndroidX)
+      - EJPT2
+      - EJPT3
+      - EJPT4
+      - ETWT2
+      - ETWT3
+      - EUST1
+      - EUST2
+      - EHKT5
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
