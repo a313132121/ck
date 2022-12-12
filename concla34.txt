@@ -6,15 +6,14 @@ log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
   - {"type":"trojan","name":"虚通网络通路01","server":"hk1130.qqwe.ml","port":443,"password":"tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz","udp":true,"skip-cert-verify":true,"sni":"hk85.qqwe.ml"}
-  - {"type":"vmess","name":"虚通网络通路02","ws-opts":{"path":"/"},"server":"yes.iamagoodman.net","port":"16627","uuid":"19601fea-ff66-486a-a551-b892ca2f759c","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"虚通网络通路03","server":"49.51.179.116","port":"45046","uuid":"e5584f83-07e9-4143-9654-a44334ffd649","alterId":"64","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"虚通网络通路04","server":"49.51.232.253","port":"11388","uuid":"2fb49486-cc63-44a8-a95d-41e9a2cbf53d","alterId":"64","cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"虚通网络通路05","server":"lqoo.xyz","port":60006,"password":"QkxJPTkWg3","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"虚通网络通路06","server":"jinhuaitao.com","port":443,"password":"lili900508","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"虚通网络通路07","ws-opts":{"path":"/clientarea","headers":{"host":"hkbn03.tizi1.net"}},"server":"hkbn03.tizi1.net","port":"443","uuid":"0565f51e-f7e9-4962-ab9c-61407ef581c8","alterId":"1","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"虚通网络通路08","server":"gddx.fosi.hk","port":"27043","uuid":"8b74817d-a67b-4782-b7d0-7eb88ffb8741","alterId":"0","cipher":"auto","network":"tcp","tls":true}
-  - {"type":"vmess","name":"虚通网络通路09","server":"gyiepl.1aba.cn","port":"37971","uuid":"3196fdca-c185-4932-aa60-339908884d7a","alterId":"0","cipher":"auto","network":"tcp","tls":true}
-  - {"type":"vmess","name":"虚通网络通路10","http-opts":{"path":["/"]},"server":"43.129.234.80","port":"56607","uuid":"e3d62ad7-9dc4-479c-b5fb-24e0bbdd09f1","alterId":"0","cipher":"auto","network":"http"}
+  - {"type":"vmess","name":"虚通网络通路02","server":"49.51.179.116","port":"45046","uuid":"e5584f83-07e9-4143-9654-a44334ffd649","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"虚通网络通路03","ws-opts":{"path":"/clientarea","headers":{"host":"hkbn03.tizi1.net"}},"server":"hkbn03.tizi1.net","port":"443","uuid":"0565f51e-f7e9-4962-ab9c-61407ef581c8","alterId":"1","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"虚通网络通路04","ws-opts":{"path":"/joodin"},"server":"d2fhhdv5muwwbi.cloudfront.net","port":"80","uuid":"616a46be-7242-4392-ce9d-bcf15b5dc229","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"虚通网络通路05","ws-opts":{"path":"/f1e6026a-c0cc-45b6-fdf1-c49074c224ec"},"server":"kr1.easonfan.online","port":"443","uuid":"f1e6026a-c0cc-45b6-fdf1-c49074c224ec","alterId":"0","cipher":"none","network":"ws","tls":true}
+  - {"type":"vmess","name":"虚通网络通路06","ws-opts":{"path":"/1024vws?ed=2048","headers":{"host":"cclsj.tianxiedaiweige.cf"}},"server":"45.64.22.55","port":"443","uuid":"4a366aee-bbad-42ac-bfbc-8520dc3bc1cb","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"虚通网络通路07","ws-opts":{"path":"/petalvws","headers":{"host":"petal.ga"}},"server":"petal.ga","port":"443","uuid":"b744f5cc-eab2-d2cd-f477-76646d17987f","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"虚通网络通路08","ws-opts":{"path":"/"},"server":"hkt.kidcc.xyz","port":"8443","uuid":"e666f40b-c8bd-4bf5-898f-64bb0dd0bcab","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"虚通网络通路09","ws-opts":{"path":"/ray"},"server":"cu2.ainivp.com","port":"33412","uuid":"9209afcd-100e-781f-1abc-c2aefccd2320","alterId":"4","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -30,7 +29,6 @@ proxy-groups:
       - 虚通网络通路07
       - 虚通网络通路08
       - 虚通网络通路09
-      - 虚通网络通路10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -46,7 +44,6 @@ proxy-groups:
       - 虚通网络通路07
       - 虚通网络通路08
       - 虚通网络通路09
-      - 虚通网络通路10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -62,7 +59,6 @@ proxy-groups:
       - 虚通网络通路07
       - 虚通网络通路08
       - 虚通网络通路09
-      - 虚通网络通路10
   - name: 📲 电报信息
     type: select
     proxies:
@@ -77,7 +73,6 @@ proxy-groups:
       - 虚通网络通路07
       - 虚通网络通路08
       - 虚通网络通路09
-      - 虚通网络通路10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -92,7 +87,6 @@ proxy-groups:
       - 虚通网络通路07
       - 虚通网络通路08
       - 虚通网络通路09
-      - 虚通网络通路10
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -107,7 +101,6 @@ proxy-groups:
       - 虚通网络通路07
       - 虚通网络通路08
       - 虚通网络通路09
-      - 虚通网络通路10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -139,7 +132,6 @@ proxy-groups:
       - 虚通网络通路07
       - 虚通网络通路08
       - 虚通网络通路09
-      - 虚通网络通路10
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
