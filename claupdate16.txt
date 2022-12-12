@@ -14,6 +14,8 @@ proxies:
   - {"type":"vmess","name":"Oracle|TCP|TW2","ws-opts":{"path":"/clientarea","headers":{"host":"hkbn03.tizi1.net"}},"server":"hkbn03.tizi1.net","port":"443","uuid":"0565f51e-f7e9-4962-ab9c-61407ef581c8","alterId":"1","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"Oracle|TCP|US1","server":"49.51.179.116","port":"45046","uuid":"e5584f83-07e9-4143-9654-a44334ffd649","alterId":"64","cipher":"auto","network":"tcp"}
   - {"type":"vmess","name":"Oracle|TCP|US2","ws-opts":{"path":"/http"},"server":"http.fanx.eu.org","port":"80","uuid":"76ff7ecd-c9b0-4f96-a3dd-98dc67078433","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"Oracle|TCP|KR1","ws-opts":{"path":"/f1e6026a-c0cc-45b6-fdf1-c49074c224ec"},"server":"kr1.easonfan.online","port":"443","uuid":"f1e6026a-c0cc-45b6-fdf1-c49074c224ec","alterId":"0","cipher":"none","network":"ws","tls":true}
+  - {"type":"vmess","name":"Oracle|TCP|JP1","ws-opts":{"path":"/hls/cctv5phd.m3u8","headers":{"host":"jp03-vm0.entry.srthdw.art"}},"server":"jp03-vm0.entry.srthdw.art","port":"447","uuid":"5f9cbf6c-e16c-3d9d-b4e2-67f5acbe1da5","alterId":"1","cipher":"auto","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -29,6 +31,8 @@ proxy-groups:
       - Oracle|TCP|TW2
       - Oracle|TCP|US1
       - Oracle|TCP|US2
+      - Oracle|TCP|KR1
+      - Oracle|TCP|JP1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -44,6 +48,8 @@ proxy-groups:
       - Oracle|TCP|TW2
       - Oracle|TCP|US1
       - Oracle|TCP|US2
+      - Oracle|TCP|KR1
+      - Oracle|TCP|JP1
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -59,6 +65,8 @@ proxy-groups:
       - Oracle|TCP|TW2
       - Oracle|TCP|US1
       - Oracle|TCP|US2
+      - Oracle|TCP|KR1
+      - Oracle|TCP|JP1
   - name: 📲 电报信息
     type: select
     proxies:
@@ -73,6 +81,8 @@ proxy-groups:
       - Oracle|TCP|TW2
       - Oracle|TCP|US1
       - Oracle|TCP|US2
+      - Oracle|TCP|KR1
+      - Oracle|TCP|JP1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -87,6 +97,8 @@ proxy-groups:
       - Oracle|TCP|TW2
       - Oracle|TCP|US1
       - Oracle|TCP|US2
+      - Oracle|TCP|KR1
+      - Oracle|TCP|JP1
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -101,6 +113,8 @@ proxy-groups:
       - Oracle|TCP|TW2
       - Oracle|TCP|US1
       - Oracle|TCP|US2
+      - Oracle|TCP|KR1
+      - Oracle|TCP|JP1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,6 +146,8 @@ proxy-groups:
       - Oracle|TCP|TW2
       - Oracle|TCP|US1
       - Oracle|TCP|US2
+      - Oracle|TCP|KR1
+      - Oracle|TCP|JP1
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
