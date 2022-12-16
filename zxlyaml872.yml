@@ -9,11 +9,12 @@ proxies:
   - {"type":"vmess","name":"微软云VPS","ws-opts":{"path":"/ray"},"server":"cu2.ainivp.com","port":"33412","uuid":"9209afcd-100e-781f-1abc-c2aefccd2320","alterId":"4","cipher":"auto","network":"ws","tls":true}
   - {"type":"trojan","name":"GCP-Vmess-JP","server":"daban.yynyyds.ml","port":6000,"password":"VOlSKxYRxG","udp":true,"skip-cert-verify":true}
   - {"type":"trojan","name":"GCP-Vmess-HK","server":"hk.yynyyds.ml","port":443,"password":"4nzeopESYD","udp":true,"skip-cert-verify":true}
-  - {"type":"vless","name":"Oracle|TCP|香港","server":"ttggzx666.com","port":1433,"uuid":"ee28fc08-686a-412b-85b8-a3463651e4cd","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/ea202/"}}
+  - {"type":"vmess","name":"微软hlister","ws-opts":{"path":"/"},"server":"103.113.157.16","port":"34601","uuid":"aebd01d0-4f08-49dc-aef7-b3e93776688c","alterId":"0","cipher":"auto","network":"ws"}
   - {"type":"trojan","name":"Azure|TLS|日本","server":"daban.yynyyds.ml","port":6000,"password":"VOlSKxYRxG","udp":true,"skip-cert-verify":true}
   - {"type":"trojan","name":"HK-GCP|香港","server":"gcphk.yynyyds.ml","port":6000,"password":"jnA4iyyrYN","udp":true,"skip-cert-verify":true}
   - {"type":"trojan","name":"JP-GCP-OSK|日本","server":"daban.yynyyds.ml","port":6000,"password":"VOlSKxYRxG","udp":true,"skip-cert-verify":true}
   - {"type":"vmess","name":"香港|Netflix|GZ|BGP","server":"testha1.yunyunyund.win","port":"7100","uuid":"59889793-93f0-3f24-870b-2d77a4602d54","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"TW-GCP|台湾","server":"tw2.yynyyds.ml","port":6000,"password":"SBmBuOO3bR","udp":true,"skip-cert-verify":true}
   - {"type":"trojan","name":"US-QN-美国","server":"us.yynyyds.ml","port":6000,"password":"3R8mtdhEU3","udp":true,"skip-cert-verify":true}
   - {"type":"vmess","name":"US-GCP-CDN|美国","server":"49.51.179.116","port":"45046","uuid":"e5584f83-07e9-4143-9654-a44334ffd649","alterId":"64","cipher":"auto","network":"tcp"}
 proxy-groups:
@@ -26,11 +27,12 @@ proxy-groups:
       - 微软云VPS
       - GCP-Vmess-JP
       - GCP-Vmess-HK
-      - Oracle|TCP|香港
+      - 微软hlister
       - Azure|TLS|日本
       - HK-GCP|香港
       - JP-GCP-OSK|日本
       - 香港|Netflix|GZ|BGP
+      - TW-GCP|台湾
       - US-QN-美国
       - US-GCP-CDN|美国
   - name: ♻️ 自动选择
@@ -43,11 +45,12 @@ proxy-groups:
       - 微软云VPS
       - GCP-Vmess-JP
       - GCP-Vmess-HK
-      - Oracle|TCP|香港
+      - 微软hlister
       - Azure|TLS|日本
       - HK-GCP|香港
       - JP-GCP-OSK|日本
       - 香港|Netflix|GZ|BGP
+      - TW-GCP|台湾
       - US-QN-美国
       - US-GCP-CDN|美国
   - name: 🌍 国外媒体
@@ -60,11 +63,12 @@ proxy-groups:
       - 微软云VPS
       - GCP-Vmess-JP
       - GCP-Vmess-HK
-      - Oracle|TCP|香港
+      - 微软hlister
       - Azure|TLS|日本
       - HK-GCP|香港
       - JP-GCP-OSK|日本
       - 香港|Netflix|GZ|BGP
+      - TW-GCP|台湾
       - US-QN-美国
       - US-GCP-CDN|美国
   - name: 📲 电报信息
@@ -76,11 +80,12 @@ proxy-groups:
       - 微软云VPS
       - GCP-Vmess-JP
       - GCP-Vmess-HK
-      - Oracle|TCP|香港
+      - 微软hlister
       - Azure|TLS|日本
       - HK-GCP|香港
       - JP-GCP-OSK|日本
       - 香港|Netflix|GZ|BGP
+      - TW-GCP|台湾
       - US-QN-美国
       - US-GCP-CDN|美国
   - name: Ⓜ️ 微软服务
@@ -92,11 +97,12 @@ proxy-groups:
       - 微软云VPS
       - GCP-Vmess-JP
       - GCP-Vmess-HK
-      - Oracle|TCP|香港
+      - 微软hlister
       - Azure|TLS|日本
       - HK-GCP|香港
       - JP-GCP-OSK|日本
       - 香港|Netflix|GZ|BGP
+      - TW-GCP|台湾
       - US-QN-美国
       - US-GCP-CDN|美国
   - name: 🍎 苹果服务
@@ -108,11 +114,12 @@ proxy-groups:
       - 微软云VPS
       - GCP-Vmess-JP
       - GCP-Vmess-HK
-      - Oracle|TCP|香港
+      - 微软hlister
       - Azure|TLS|日本
       - HK-GCP|香港
       - JP-GCP-OSK|日本
       - 香港|Netflix|GZ|BGP
+      - TW-GCP|台湾
       - US-QN-美国
       - US-GCP-CDN|美国
   - name: 🎯 全球直连
@@ -141,11 +148,12 @@ proxy-groups:
       - 微软云VPS
       - GCP-Vmess-JP
       - GCP-Vmess-HK
-      - Oracle|TCP|香港
+      - 微软hlister
       - Azure|TLS|日本
       - HK-GCP|香港
       - JP-GCP-OSK|日本
       - 香港|Netflix|GZ|BGP
+      - TW-GCP|台湾
       - US-QN-美国
       - US-GCP-CDN|美国
 rules:
